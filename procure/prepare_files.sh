@@ -2,6 +2,13 @@
 
 cd ../deploy
 
+# for local docker container
+CONTAINER_DIR = "../projects/hello-world/container"
+# a temp directory to store your container files
+mkdir -p temp_container 
+# copy all files under the container dir to the temp container folder
+cp -r "CONTAINER_DIR"/* ./temp_container
+
 # Tar the deployment files
 # Enumerate them so that OS-specific files are not included
 tar -czvf ../procure/deploy.tar.gz docker-compose.yaml fluent-bit.conf redis.conf \
@@ -21,3 +28,6 @@ tar -czvhf ../procure/deploy-gpu.tar.gz -C temp_links docker-compose.yaml fluent
 
 # Clean up the symbolic links and the temporary directory
 rm -rf temp_links
+
+# clean the temp_container folder
+rm -rf temp_container
