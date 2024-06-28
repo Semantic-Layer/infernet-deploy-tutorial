@@ -2,16 +2,17 @@
 
 cd ../deploy
 
-# for local docker container
-CONTAINER_DIR = "../projects/hello-world/container"
+# for local docker container. change it to your container folder
+CONTAINER_DIR="../projects/hello-world/container"
+
 # a temp directory to store your container files
 mkdir -p temp_container 
 # copy all files under the container dir to the temp container folder
-cp -r "CONTAINER_DIR"/* ./temp_container
+cp -r "$CONTAINER_DIR"/* ./temp_container
 
 # Tar the deployment files
 # Enumerate them so that OS-specific files are not included
-tar -czvf ../procure/deploy.tar.gz docker-compose.yaml fluent-bit.conf redis.conf -C temp_container .\
+tar -czvf ../procure/deploy.tar.gz docker-compose.yaml fluent-bit.conf redis.conf -C temp_container . \
     &> /dev/null;
 
 # GPU deployment files. Rename docker-compose-gpu.yaml to docker-compose.yaml
