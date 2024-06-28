@@ -55,4 +55,6 @@ tar -xzvf deploy.tar.gz && rm deploy.tar.gz
 curl http://metadata.google.internal/computeMetadata/v1/instance/attributes/secret-config -H "Metadata-Flavor: Google" | base64 --decode > config.json
 chmod 600 config.json
 
+# build your local container
+sudo docker build -t ritualnetwork/hello-world-infernet:latest .
 sudo docker compose up -d
