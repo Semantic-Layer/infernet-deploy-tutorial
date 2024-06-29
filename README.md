@@ -1,6 +1,11 @@
 # Ritual Infernet Node Deployment Tutorial
 
-This repository provides a tutorial on deploying a Ritual Infernet node to Google Cloud. We will deploy the "hello-world" container located under `projects/hello-world/container`.
+[![badge](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=flat&logo=google-cloud&logoColor=white&label=Ritual%20Infernet%20Node)](https://docs.ritual.net/infernet/node/introduction)
+
+![Group 14](https://github.com/Semantic-Layer/infernet-deploy-tutorial/assets/56213581/dd2da6b6-a2a5-4705-a96e-1ddbd22f2850)
+
+
+This repository provides a tutorial on deploying a **Ritual Infernet node** to Google Cloud. We will deploy the `hello-world` container located under `projects/hello-world/container`.
 
 This example focuses on deploying a local container. Modifications have been made to [procure/prepare_files.sh](procure/prepare_files.sh) and [procure/gcp/scripts/node.tpl](procure/gcp/scripts/node.tpl) to work with local Docker container files.
 
