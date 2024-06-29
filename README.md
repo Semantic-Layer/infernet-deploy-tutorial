@@ -1,4 +1,4 @@
-# Ritual Infernet Deployment Tutorial
+# Ritual Infernet Node Deployment Tutorial
 
 This repository provides a tutorial on deploying a Ritual Infernet node to Google Cloud. We will deploy the "hello-world" container located under `projects/hello-world/container`.
 
