@@ -35,7 +35,7 @@ cp terraform.tfvars.example terraform.tfvars
 
 Update the following settings in the `terraform.tfvars` file:
 
-- **service_account_email**: Replace the `project` in `"ritual-deployer@project.iam.gserviceaccount.com"` with your Google Cloud project ID. You can check the service account email from your Google Cloud project.
+- **service_account_email**: Replace the `project` in `ritual-deployer@project.iam.gserviceaccount.com` with your Google Cloud project ID. You can check the service account email from your Google Cloud project.
 
 - **project**: Change this to your Google Cloud project ID.
 
